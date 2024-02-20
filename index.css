@@ -1,0 +1,133 @@
+*,
+::before
+::after{
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+/* todo */
+body{
+    margin: 0;
+    font-family: "arial";
+    padding-top: 4rem ;
+    height: 100vh;
+}
+/* barra del navegador */
+#nav-bar {
+    height: 4rem;
+    background-color:black;
+    top: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+/* para seleccionar al hijo de algo se usa >*/
+/* nav bar container es todo lo que engloba la barra de navegacion */
+#nav-bar-container > h2{
+    margin: 0;
+    display: flex;
+    color: white
+}
+
+#nav-bar-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    background-color: black;
+    padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 80rem;
+}
+/* son las barritas */
+#menu-icon {
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    padding:0.25rem;
+    width: 2rem;
+    height: 2rem;
+}
+#menu-icon:active {
+    background-color: grey;
+    color: black;
+    border: 2px sold black
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+    color: gray;
+}
+#links-container {
+    display: none;
+    gap: 2rem;
+}
+#main-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    gap: 1rem ;
+}
+#main-title{
+    margin: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+#desc-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-decoration: none;
+}
+#desc-text{
+    margin: 0;
+    text-align: justify;
+}
+#desc-link{
+    background-color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: all 0.175s ease-in-out;
+}
+#desc-link:hover{
+    background-color: gray;
+    color: black;
+}
+/* A partir del media es como la version de laptop */
+@media (min-width:768px){
+    #menu-icon {
+        display: none;
+    }
+    #links-container{
+        display: flex;
+    }
+    #main-container{
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+    }
+    #main-title{
+        width:50%;
+        font-size: 4rem;
+    }
+    #desc-container{
+        width: 50%;
+    }
+}
