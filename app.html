@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
     <nav id="nav-tareas">
         
         <div id="nav-contenido">
@@ -23,55 +23,24 @@
     </nav>
     <main id="main-container"> 
         <h1 id="main-title">Tricadeberes</h1>
-        <div id="barra-creadora">
+        <form id="barra-creadora">
             <input id="barra-text" placeholder="Ingrese una Tricatarea..." type="text">
-            <svg id="ag-tarea" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-            </svg>
-        </div>  
+            <button id="ag-tarea-pa"type="submit">
+                <svg id="ag-tarea" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </button>
+        </form>  
 
         <ul id="barra">
-            <div class="barra-tarea">
-                <svg class="x" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>
-                
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio quae eaque facere quia distinctio fugit tenetur odit natus. Nostrum laborum quia mollitia aut doloremque dolorem explicabo eveniet nemo fuga!</h1>
-                <svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                </svg>
-                
-            </div>
-            <div class="barra-tarea">
-                <svg class="x" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>
-                
-                <h1>Cambiar interior</h1>
-                <svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                </svg>
-                
-            </div>
-            <div class="barra-tarea">
-                <svg class="x-listo" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>
-                
-                <h1 id="tarea-lista">Botar basura</h1>
-                <svg class="check-listo" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                </svg>
-
-                
-            </div>
-            
         </ul>
         <div id="info-tareas">
             <h1>Total: 3</h1>
             <h2>Completadas: 1</h2>
             <h3>Pendientes: 2</h3>
         </div>
-    </main>
+       
+    </main>  
+    <script src="dom.js"></script>
 </body>
 </html>
