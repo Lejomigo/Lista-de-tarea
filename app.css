@@ -45,9 +45,12 @@ body{
     justify-content: center;
     padding: 0;
     gap: 2rem ;
-    width: 80%;
     position: fixed;
 
+}
+#ag-tarea-pa{
+    background-color: transparent;
+    border: none;
 }
 #main-title{
     color: rgb(0, 0, 0);
@@ -69,14 +72,18 @@ body{
     display: block;
 }
 #barra-text{
-    color: gray;
+    background-color: white;
+    color: black;
     font-size: 1rem;
     border: none;
     outline: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
 }
 
-.barra-tarea>h1{
+.list-item>h1{
     text-overflow: hidden;
+    margin: 0; 
 }
 #ag-tarea{
     width: 2rem;
@@ -84,6 +91,7 @@ body{
     padding: 0.25 rem;
     cursor: pointer;
     flex-shrink: 0;
+    background-color: transparent;
 }
 #ag-tarea:active{
     background-color: gray;
@@ -100,6 +108,10 @@ body{
     flex-shrink: 0;
     margin-left: 10px;
 }
+.tachado {
+    text-decoration: line-through;
+    color: green;
+}
 .x{
     width: 2rem;
     height: 2rem;
@@ -110,73 +122,21 @@ body{
     flex-shrink: 0;
     margin-right: 10px;
 }
-.check:active{
-    width: 2rem;
-    height: 2rem;
-    padding: 0.25 rem;
-    cursor: pointer;
-    color: white;
-    background-color: green;
-    border: 1px solid green;
-    border-radius: 1rem;
-    flex-shrink: 0;
-    margin-left: 10px;
-}
-.x:active{
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-    color: white;
-    background-color: red;
-    border: 1px solid red;
-    border-radius: 1rem;
-    flex-shrink: 0;
-    margin-right: 10px;
-}
-.x-listo{
-    width: 2rem;
-    height: 2rem;
-    color: white;
-    border: 1px solid white;
-    border-radius: 1rem;
-    flex-shrink: 0;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-.check-listo{
-    width: 2rem;
-    height: 2rem;
-    padding: 0.25 rem;
-    cursor: pointer;
-    color: white;
-    background-color: green;
-    border: 1px solid green;
-    border-radius: 1rem;
-    flex-shrink: 0;
-    margin-left: 10px;
-}
-#tarea-lista{
-    font-size: 1rem;
-    color: gray;
-    text-decoration: line-through;
-}
-.barra-tarea>h1{
+.list-item>h1{
     font-size: 1rem;
 }
-.barra-tarea{
+.list-item {
     background-color: white;
     border: 1px solid black;
+    border-radius:  0.375rem  ;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem;
     align-items: center;
     position: relative;
-    
 }
 #barra{
-    border: 1px solid black;
-    border-radius:  0.375rem;
     margin: 0;
     max-height: 13rem;
     text-overflow: ellipsis;
